@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int i,integer;
+    int count=0;
+    printf("Length of Array : ");
+    scanf("%d",&i);
+    int a[i];
+    printf("Enter %d array Element : ");
+    for(int j=0;j<i;j++)
+    {
+        scanf("%d",&a[j]);
+    }
+    printf("Enter Integer : ");
+    scanf("%d",&integer);
+    for(int k=0;k<i;k++)
+    {
+        if(a[k]==integer)
+        {
+            count+=1;
+        }
+    }
+    printf("%d",count);
+    return 0;
+}
